@@ -38,7 +38,7 @@ sleep 2
 echo 'Mounting filesystem as read-write'
 sshpass -p 'alpine' ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@localhost -p2222 'mount_filesystems'
 
-echo 'Running iOS iCloud Bypass...'
+echo 'Running iCloud Bypass...'
 sshpass -p 'alpine' ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@localhost -p2222 'cp -f /System/Library/PrivateFrameworks/MobileActivation.framework/Support/Certificates/FactoryActivation.pem /System/Library/PrivateFrameworks/MobileActivation.framework/Support/Certificates/RaptorActivation.pem'
 
 
