@@ -47,7 +47,7 @@ sleep 2
 # Kill iproxy
 kill %1 > /dev/null 2>&1
 
-ideviceactivation activate -s https://applera1n.github.io/miunlock/activator.php -d
+ideviceactivation activate -s https://hackt1vator.github.io/miunlock/activator.php -d
 
 echo 'bypass Done!'
 
