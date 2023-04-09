@@ -45,6 +45,25 @@ def startcheckra1n():
     root.iconphoto(False, tk.PhotoImage(file='settings.gif'))
     
     
+def ios15bypass():
+
+    global LAST_CONNECTED_UDID, LAST_CONNECTED_IOS_VER
+    
+    #iOSVER = str(LAST_CONNECTED_IOS_VER)
+    iOSVer = askstring('Device iOS?', 'On what ios version are you?')
+    
+    #check if theres a valid string to continue to reversing jb
+    if(len(iOSVer) < 2):
+        showinfo('Bypass Failed', 'Give me a valid iOS version.')
+    else:
+        showinfo('Ready to Jailbreak...', 'Hi, iOS '+str(iOSVer)+'. \n\nWe will now bypass your device '+str(iOSVer)+' Semi-Tethered.')
+        print("Starting bypass...")
+        os.system(f"cd ./palera1n/ && ./palera1n.sh --tweaks {iOSVer} --semi-tethered")
+        
+        print("Device is bypassed!\n")
+        showinfo('Bypass Success!', 'Device is now bypassed!')
+    
+    
 
 def showDFUMessage():
     messagebox.showinfo("Step 1","Put your iDevice into DFU mode.\n\nClick Ok once its ready in DFU mode to proceed.")
@@ -106,6 +125,11 @@ cButton2 = tk.Button(frame,
                    command=startcheckra1n,
                    state="normal")
 cButton2.place(x=70, y=160)
+cButton3 = tk.Button(frame,
+                   text="bypass ios 15-16",
+                   command=ios15bypass,
+                   state="normal")
+cButton3.place(x=325, y=160)
 
 #Create a Label to display the link
 link = Label(root, text="Made this tool @hackt1vator",font=('Helveticabold', 12), cursor="hand2")
