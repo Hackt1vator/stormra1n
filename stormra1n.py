@@ -41,7 +41,7 @@ def startcheckra1n():
     os.system("./checkra1n/checkra1n -c -V -E")
     print("Ran jb script.\n")
     #show message to jb
-    messagebox.showinfo("Jailbreak Ran","Jailbreak done!\n\nNow Make it Sn0w!")
+    messagebox.showinfo("Jailbreak Ran","Jailbreak done!\n\n")
     root.iconphoto(False, tk.PhotoImage(file='settings.gif'))
     
     
@@ -68,15 +68,20 @@ def ios15bypass():
 def showDFUMessage():
     messagebox.showinfo("Step 1","Put your iDevice into DFU mode.\n\nClick Ok once its ready in DFU mode to proceed.")
     
-def startbypass():
+def prepareCert():
+
     os.system("bash FactoryActivation.sh")
-def enterRecMode():
-    print("Kicking device into recovery mode...")
-    os.system("./extras/euphoria_scripts/enterrecovery.sh")
+    messagebox.showinfo("Step 1","Done.")
+
+def startbypass():
+
+    server = askstring('MI Unlock?', 'What is your MI Unlock server?')
     
-def exitRecMode():
-    print("Kicking device out recovery mode...")
-    os.system("./extras/euphoria_scripts/exitrecovery.sh")
+    os.system(f"ideviceactivation activate -s {server} -d")
+    
+    showinfo('Bypass Success!', 'Device is now bypassed!')
+
+    
 
 def callback(url):
    webbrowser.open_new_tab(url)
@@ -116,20 +121,25 @@ my_label3.place(x=10, y=220)
 
 
 cButton1 = tk.Button(frame,
-                   text="beat the storm",
-                   command=startbypass,
+                   text="prepare Certs ios 12-14",
+                   command=prepareCert,
                    state="normal")
-cButton1.place(x=200, y=160)
+cButton1.place(x=140, y=160)
 cButton2 = tk.Button(frame,
                    text="start checkra1n",
                    command=startcheckra1n,
                    state="normal")
-cButton2.place(x=70, y=160)
+cButton2.place(x=10, y=160)
 cButton3 = tk.Button(frame,
-                   text="bypass ios 15-16",
+                   text="prepare Certs ios 15-16",
                    command=ios15bypass,
                    state="normal")
-cButton3.place(x=325, y=160)
+cButton3.place(x=315, y=160)
+cButton4 = tk.Button(frame,
+                   text="bypass",
+                   command=startbypass,
+                   state="normal")
+cButton4.place(x=200, y=10)
 
 #Create a Label to display the link
 link = Label(root, text="Made this tool @hackt1vator",font=('Helveticabold', 12), cursor="hand2")
