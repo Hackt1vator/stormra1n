@@ -826,37 +826,44 @@ if [ ! -f blobs/"$deviceid"-"$version".der ]; then
             remote_cmd "rm -rf /mnt$di/System/Library/Caches/com.apple.dyld"
             remote_cmd "ln -s /System/Cryptexes/OS/System/Library/Caches/com.apple.dyld /mnt$di/System/Library/Caches/"
         fi
+        
+        
+        #start icloud bypass
 
+        echo ""
+        echo "
 
-# iOS 12-14 Signal iCloud Bypass
-
-echo ""
-echo "
-
- ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡
- ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡
- ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡
+        ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡
+        ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡
+        ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡
  
-"
-echo ""
-
-echo "Start iproxy"
-iproxy 2222 22 &
-
-echo "SSH into localhost using port 2222"
-ssh root@localhost -p 2222 << EOF
-# Copy FactoryActivation.pem to RaptorActivation.pem
-cp -f /System/Library/PrivateFrameworks/MobileActivation.framework/Support/Certificates/FactoryActivation.pem /System/Library/PrivateFrameworks/MobileActivation.framework/Support/Certificates/RaptorActivation.pem
-EOF
-
-echo "Kill iproxy"
-kill %1
+        "
+        echo ""
 
 
 
-echo 'bypass Done!'
+        rm -rf ~/.ssh/known_hosts
 
-echo ''
+
+
+        sleep 1
+
+        echo ''
+
+        echo "patching RaptorActivation.pem"
+        remote_cp ./RaptorActivation.pem root@localhost:/mnt6/$active/System/Library/PrivateFrameworks/MobileActivation.framework/Support/Certificates/RaptorActivation.pem
+        echo "Done"
+
+
+
+
+
+
+        echo 'Done'
+
+        echo ''
+
+
 
         
 
