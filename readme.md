@@ -6,8 +6,7 @@
 ![alt text](https://github.com/hackt1vator/stormra1n/blob/main/demoing.png)
 
 </h1>
-<h3 align="center">This is a modded version of    <strong><a href="https://github.com/palera1n/palera1n">Palera1n jailbreak</a></strong></h3>
-<p align="center">
+
     <strong><a href="https://github.com/Hackt1vator/stormra1n/releases/">releases</a></strong>
     •
     <strong><a href="https://twitter.com/hackt1vator">Twitter</a></strong>
