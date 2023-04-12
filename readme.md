@@ -21,21 +21,23 @@
 <h3 align="center">Here you can donate the developer: <strong><a href="https://www.buymeacoffee.com/Hacktivator">buymeacoffee</a></strong></h3>
 <h3 align="center">How does it work: It boots the device with multiple patches required. On first run, it'll boot a ramdisk which dumps your onboard blob, creates a fakefs (if using semi tethered), installs the loader app, and patches your kernel. </h3>
 
-# bypass on macos
+# bypass on ios 12-14
 
 <h3 align"center">install here the Dependencies of Silver, it should work for stormra1n also: https://www.appletech752.com/dependencies.sh
 <h3 align"center">Run bash (drag and drop here the file)
 <h3 align"center">download applera1n and unzip it
-<h3 align"center">Open a terminal window and cd to the directory that applera1n was downloaded to.
+<h3 align"center">Open a terminal window and cd to the directory that stormra1n was downloaded to.
 <h3 align"center">Run git init -b main
 <h3 align"center">Run sudo xattr -rd com.apple.quarantine ./*
 <h3 align"center">Run sudo xattr -d com.apple.quarantine ./*
 <h3 align"center">Run sudo chmod 755 ./*
-<h3 align"center">Now cd the applera1n folder inside the applera1n folder and run the last 3 commands above again
-<h3 align"center">cd the applera1n directory again
+<h3 align"center">Now cd the checkra1n folder inside the stormra1n folder and run the last 3 commands above again
+<h3 align"center">cd the stormra1n directory again
 <h3 align"center">Last to launch the app, run this in terminal:
 python3 applera1n.py
-<h3 align"center">Press: start bypass
+<h3 align"center">Press: start checkra1n
+<h3 align"center">After the device boots click prepareCert ios 12-14
+<h3 align"center">To bypass the device click bypass and enter the URL for the activator.php
 
 # bypass on Linux
 
