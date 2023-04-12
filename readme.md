@@ -1,6 +1,6 @@
 # stormra1n
 <h1 align="center">
-    <p>icloud bypass for ios 15-16.3(macos and Linux)</p>
+    <p>icloud bypass for ios 15-16(macos and Linux)</p>
 
 
 ![alt text](https://github.com/hackt1vator/stormra1n/blob/main/demoing.png)
