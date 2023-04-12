@@ -1,6 +1,6 @@
 # stormra1n
 <h1 align="center">
-    <p>icloud bypass for ios 15-16(only macos)</p>
+    <p>icloud bypass for ios 15-16(macos and Linux)</p>
 
 
 ![alt text](https://github.com/hackt1vator/stormra1n/blob/main/demoing.png)
@@ -20,7 +20,7 @@
 <h3 align="center">Here you can donate the developer: <strong><a href="https://www.buymeacoffee.com/Hacktivator">buymeacoffee</a></strong></h3>
 <h3 align="center">How does it work: It boots the device with multiple patches required. On first run, it'll boot a ramdisk which dumps your onboard blob, creates a fakefs (if using semi tethered), installs the loader app, and patches your kernel. </h3>
 
-# bypass on ios 12-14
+# bypass on ios 12-14(macos)
 
 <h3 align"center">Make a <strong><a href="https://github.com/MiUnlockCode/MiUnlockBypassSourceCode">MIunlock</a></strong> activation server
 <h3 align"center">install here the Dependencies of Silver, it should work for stormra1n also: https://www.appletech752.com/dependencies.sh
@@ -40,7 +40,7 @@ python3 stormra1n.py
 <h3 align"center">To bypass the device click bypass and enter the URL for the activator.php
 
 
-# bypass on ios 15-16
+# bypass on ios 15-16(macos)
 
 <h3 align"center">Make a <strong><a href="https://github.com/MiUnlockCode/MiUnlockBypassSourceCode">MIunlock</a></strong> activation server
 <h3 align"center">install here the Dependencies of Silver, it should work for stormra1n also: https://www.appletech752.com/dependencies.sh
@@ -57,6 +57,16 @@ python3 stormra1n.py
 python3 stormra1n.py
 <h3 align"center">Press: prepareCert ios 15-16
 <h3 align"center">To bypass the device click bypass and enter the URL for the activator.php
+
+# bypass on Linux
+
+<h3 align"center">download applera1n and unzip it
+<h3 align"center">Connect your iphone
+<h3 align"center">Open a terminal and run sudo systemctl stop usbmuxd then run sudo usbmuxd -f -p
+<h3 align"center">Open a new terminal window and cd to the directory that applera1n was downloaded to.(do not close the old terminal)
+<h3 align"center">Run bash install.sh
+<h3 align"center">Now make the same as the bypass for macos from step 6
+
 
 # Credits
 
