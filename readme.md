@@ -52,7 +52,7 @@ python3 stormra1n.py
 <h3 align"center">Run sudo xattr -rd com.apple.quarantine ./*
 <h3 align"center">Run sudo xattr -d com.apple.quarantine ./*
 <h3 align"center">Run sudo chmod 755 ./*
-<h3 align"center">Now cd the checkra1n folder inside the stormra1n folder and run the last 3 commands above again
+<h3 align"center">Now cd the palera1n folder inside the stormra1n folder and run the last 3 commands above again
 <h3 align"center">cd the stormra1n directory again
 <h3 align"center">To launch the app, run this in terminal:
 python3 stormra1n.py
