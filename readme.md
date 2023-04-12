@@ -26,7 +26,7 @@
 <h3 align"center">Make a <strong><a href="https://github.com/MiUnlockCode/MiUnlockBypassSourceCode">MIunlock</a></strong> activation server
 <h3 align"center">install here the Dependencies of Silver, it should work for stormra1n also: https://www.appletech752.com/dependencies.sh
 <h3 align"center">Run bash (drag and drop here the file)
-<h3 align"center">download applera1n and unzip it
+<h3 align"center">download stormra1n and unzip it
 <h3 align"center">Open a terminal window and cd to the directory that stormra1n was downloaded to.
 <h3 align"center">Run git init -b main
 <h3 align"center">Run sudo xattr -rd com.apple.quarantine ./*
@@ -35,34 +35,29 @@
 <h3 align"center">Now cd the checkra1n folder inside the stormra1n folder and run the last 3 commands above again
 <h3 align"center">cd the stormra1n directory again
 <h3 align"center">To launch the app, run this in terminal:
-python3 applera1n.py
+python3 stormra1n.py
 <h3 align"center">Press: start checkra1n
 <h3 align"center">After the device boots click prepareCert ios 12-14
 <h3 align"center">To bypass the device click bypass and enter the URL for the activator.php
 
-# bypass on Linux
 
-<h3 align"center">download applera1n and unzip it
-<h3 align"center">Open a terminal window and cd to the directory that applera1n was downloaded to.
+# bypass on ios 15-16
+
+<h3 align"center">Make a <strong><a href="https://github.com/MiUnlockCode/MiUnlockBypassSourceCode">MIunlock</a></strong> activation server
+<h3 align"center">install here the Dependencies of Silver, it should work for stormra1n also: https://www.appletech752.com/dependencies.sh
+<h3 align"center">Run bash (drag and drop here the file)
+<h3 align"center">download stormra1n and unzip it
+<h3 align"center">Open a terminal window and cd to the directory that stormra1n was downloaded to.
 <h3 align"center">Run git init -b main
+<h3 align"center">Run sudo xattr -rd com.apple.quarantine ./*
+<h3 align"center">Run sudo xattr -d com.apple.quarantine ./*
 <h3 align"center">Run sudo chmod 755 ./*
-<h3 align"center">Now cd the applera1n folder inside the applera1n folder and run sudo chmod 755 ./* again
-<h3 align"center">cd the applera1n directory again
-<h3 align"center">Last to launch the app, run this in terminal:
-python3 applera1n.py
-<h3 align"center">Press: start bypass
-
-# use the desktop app on macos(not recommered)
-
-<h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center">download the applera1n dmg file from the releases
-<h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center">drag and drop the applera1n.app to the application folder
-<h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center">Run these commands:
-<h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center">sudo xattr -r /Applications/applera1n.app
-<h3 align"center"><h3 align"center"><h3 align"center"><h3 align"center">sudo xattr -rd com.apple.quarantine /Applications/applera1n.app
-<h3 align"center"><h3 align"center"><h3 align"center">sudo xattr -d com.apple.quarantine /Applications/applera1n.app
-<h3 align"center"><h3 align"center">sudo xattr -r com.apple.quarantine /Applications/applera1n.app
-<h3 align"center">chmod 755 /Applications/applera1n.app
-<h3 align"center">now open the applera1n app
+<h3 align"center">Now cd the checkra1n folder inside the stormra1n folder and run the last 3 commands above again
+<h3 align"center">cd the stormra1n directory again
+<h3 align"center">To launch the app, run this in terminal:
+python3 stormra1n.py
+<h3 align"center">Press: prepareCert ios 15-16
+<h3 align"center">To bypass the device click bypass and enter the URL for the activator.php
 
 # Credits
 
