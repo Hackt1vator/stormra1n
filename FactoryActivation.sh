@@ -8,9 +8,17 @@ echo "
 "
 echo ""
 
-
+if ! which curl >> /dev/null; then
+    echo "Error: curl not found"
+    exit 1
+fi
+if ! which iproxy >> /dev/null; then
+    echo "Error: iproxy not found"
+    exit 1
+fi
 
 rm -rf ~/.ssh/known_hosts
+clear
 
 
 
@@ -30,7 +38,7 @@ echo "Mounting"
 echo "Mounted!"
 
 echo "patching RaptorActivation.pem"
-./sshpass -p 'alpine' scp -rP 2222 -o StrictHostKeyChecking=no ./RaptorActivation.pem root@localhost:/System/Library/PrivateFrameworks/MobileActivation.framework/Support/Certificates/RaptorActivation.pem
+./sshpass -p 'alpine' scp -rP 2222 -o StrictHostKeyChecking=no ./FactoryActivation.pem root@localhost:/System/Library/PrivateFrameworks/MobileActivation.framework/Support/Certificates/RaptorActivation.pem
 echo "Done"
 
 
