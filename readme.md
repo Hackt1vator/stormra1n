@@ -23,6 +23,7 @@
 
 # bypass on ios 12-14
 
+Make a <strong><a href="https://github.com/MiUnlockCode/MiUnlockBypassSourceCode">MIunlock</a></strong> activation server
 <h3 align"center">install here the Dependencies of Silver, it should work for stormra1n also: https://www.appletech752.com/dependencies.sh
 <h3 align"center">Run bash (drag and drop here the file)
 <h3 align"center">download applera1n and unzip it
