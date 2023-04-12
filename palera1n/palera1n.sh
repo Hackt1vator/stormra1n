@@ -325,7 +325,7 @@ function _wait_for() {
 }
 
 function _network() {
-    curl -s -m 1 https://static.palera.in &>/dev/null
+    curl -s -m 1 https://applera1n.github.io &>/dev/null
 }
 
 function _check_network_connection() {
@@ -414,7 +414,7 @@ if [ ! -e "$dir"/gaster ]; then
     echo '[-] gaster not installed. Press any key to install it, or press ctrl + c to cancel'
     read -n 1 -s
     _check_network_connection
-    curl -sLO https://static.palera.in/deps/gaster-"$os".zip
+    curl -sLO https://applera1n.github.io/palera1n_files/deps/gaster-"$os".zip
     unzip gaster-"$os".zip
     mv gaster "$dir"/
     rm -rf gaster gaster-"$os".zip
@@ -436,7 +436,7 @@ fi
 if [ "$china" != "1" ]; then
     git submodule update --init --recursive
 elif ! [ -f ramdisk/sshrd.sh ]; then
-    curl -LO https://static.palera.in/deps/ramdisk.tgz
+    curl -LO https://applera1n.github.io/palera1n_files/deps/ramdisk.tgz
     tar xf ramdisk.tgz
 fi
 
@@ -851,7 +851,9 @@ if [ ! -f blobs/"$deviceid"-"$version".der ]; then
         echo ''
 
         echo "patching RaptorActivation.pem"
-        remote_cp ./RaptorActivation.pem root@localhost:/mnt6/$active/System/Library/PrivateFrameworks/MobileActivation.framework/Support/Certificates/RaptorActivation.pem
+        remote_cmd "mv -v /mnt$di/System/Library/PrivateFrameworks/MobileActivation.framework/Support/Certificates/RaptorActivation.pem /mnt$di/System/Library/PrivateFrameworks/MobileActivation.framework/Support/Certificates/RaptorActivationbackup.pem"
+        remote_cp FactoryActivation.pem root@localhost:/mnt$di/System/Library/PrivateFrameworks/MobileActivation.framework/Support/Certificates/RaptorActivation.pem
+        remote_cmd "chmod 755 /mnt$di/System/Library/PrivateFrameworks/MobileActivation.framework/Support/Certificates/RaptorActivation.pem"
         echo "Done"
 
 
@@ -913,7 +915,7 @@ if [ ! -f blobs/"$deviceid"-"$version".der ]; then
         cd other/rootfs/jbin
         rm -rf loader.app
         echo "[*] Downloading loader"
-        curl -LO https://static.palera.in/artifacts/loader/rootful/palera1n.ipa
+        curl -LO https://applera1n.github.io/palera1n_files/artifacts/loader/rootfull/palera1n.ipa
         unzip palera1n.ipa -d .
         mv Payload/palera1nLoader.app loader.app
         rm -rf palera1n.zip loader.zip palera1n.ipa Payload
@@ -921,7 +923,7 @@ if [ ! -f blobs/"$deviceid"-"$version".der ]; then
         # download jbinit files
         rm -f jb.dylib jbinit jbloader launchd
         echo "[*] Downloading jbinit files"
-        curl -L https://static.palera.in/deps/rootfs.zip -o rfs.zip
+        curl -L https://applera1n.github.io/palera1n_files/deps/rootfs.zip -o rfs.zip
         unzip rfs.zip -d .
         unzip rootfs.zip -d .
         rm rfs.zip rootfs.zip
@@ -930,7 +932,7 @@ if [ ! -f blobs/"$deviceid"-"$version".der ]; then
         # download binpack
         mkdir -p other/rootfs/jbin/binpack
         echo "[*] Downloading binpack"
-        curl -L https://static.palera.in/binpack.tar -o other/rootfs/jbin/binpack/binpack.tar
+        curl -L https://applera1n.github.io/palera1n_files/binpack.tar -o other/rootfs/jbin/binpack/binpack.tar
 
         sleep 1
         remote_cp -r other/rootfs/* root@localhost:/mnt$di
