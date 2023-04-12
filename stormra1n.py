@@ -45,7 +45,7 @@ def startcheckra1n():
     root.iconphoto(False, tk.PhotoImage(file='settings.gif'))
     
     
-def ios15bypass():
+def prepareCertios15():
 
     global LAST_CONNECTED_UDID, LAST_CONNECTED_IOS_VER
     
@@ -61,7 +61,7 @@ def ios15bypass():
         os.system(f"cd ./palera1n/ && ./palera1n.sh --tweaks {iOSVer} --semi-tethered")
         
         print("Device is bypassed!\n")
-        showinfo('Bypass Success!', 'Device is now bypassed!')
+        showinfo('Bypass Success!', 'Cert is now prepared!')
     
     
 
@@ -71,7 +71,7 @@ def showDFUMessage():
 def prepareCert():
 
     os.system("bash FactoryActivation.sh")
-    messagebox.showinfo("Step 1","Done.")
+    messagebox.showinfo("Step 1","Cert is now prepared!")
 
 def startbypass():
 
@@ -132,7 +132,7 @@ cButton2 = tk.Button(frame,
 cButton2.place(x=10, y=160)
 cButton3 = tk.Button(frame,
                    text="prepare Certs ios 15-16",
-                   command=ios15bypass,
+                   command=prepareCertios15,
                    state="normal")
 cButton3.place(x=315, y=160)
 cButton4 = tk.Button(frame,
