@@ -1,4 +1,4 @@
-# applera1n
+# stormra1n
 <h1 align="center">
     <p>icloud bypass for ios 15-16.3(macos and Linux)</p>
 
@@ -8,11 +8,11 @@
 </h1>
 <h3 align="center">This is a modded version of    <strong><a href="https://github.com/palera1n/palera1n">Palera1n jailbreak</a></strong></h3>
 <p align="center">
-    <strong><a href="https://github.com/Hackt1vator/applera1n/releases/">releases</a></strong>
+    <strong><a href="https://github.com/Hackt1vator/stormra1n/releases/">releases</a></strong>
     •
     <strong><a href="https://twitter.com/hackt1vator">Twitter</a></strong>
     •
-    <strong><a   href="https://applera1n.github.io">Website</a></strong>
+    <strong><a   href="https://stormra1n.github.io">Website</a></strong>
 <h3 align="center">This is a no signal bypass</h3>
 <h3 align="center">The gui was made with <strong><a href="https://github.com/bartektenDev/Python3MacApp-LearnerTemplate">Python3MacApp LearnerTemplate</a></strong> from @ios_euphoria </h3>
 <h3 align="center">On A11 and A10 devices don´t set a passcode after bypass</h3>
@@ -23,7 +23,7 @@
 
 # bypass on macos
 
-<h3 align"center">install here the Dependencies of Silver, it should work for applera1n also: https://www.appletech752.com/dependencies.sh
+<h3 align"center">install here the Dependencies of Silver, it should work for stormra1n also: https://www.appletech752.com/dependencies.sh
 <h3 align"center">Run bash (drag and drop here the file)
 <h3 align"center">download applera1n and unzip it
 <h3 align"center">Open a terminal window and cd to the directory that applera1n was downloaded to.
