@@ -5,7 +5,6 @@
 
 ![alt text](https://github.com/hackt1vator/stormra1n/blob/main/demoing.png)
 
-</h1>
 
     <strong><a href="https://github.com/Hackt1vator/stormra1n/releases/">releases</a></strong>
     •
