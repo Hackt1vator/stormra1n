@@ -1,6 +1,6 @@
 # stormra1n
 <h1 align="center">
-    <p>icloud bypass for ios 15-16(macos and Linux)</p>
+    <p>icloud bypass for ios 15-16(only macos)</p>
 
 
 ![alt text](https://github.com/hackt1vator/stormra1n/blob/main/demoing.png)
@@ -58,14 +58,6 @@ python3 stormra1n.py
 <h3 align"center">Press: prepareCert ios 15-16
 <h3 align"center">To bypass the device click bypass and enter the URL for the activator.php
 
-# bypass on Linux
-
-<h3 align"center">download applera1n and unzip it
-<h3 align"center">Connect your iphone
-<h3 align"center">Open a terminal and run sudo systemctl stop usbmuxd then run sudo usbmuxd -f -p
-<h3 align"center">Open a new terminal window and cd to the directory that applera1n was downloaded to.(do not close the old terminal)
-<h3 align"center">Run bash install.sh
-<h3 align"center">Now make the same as the bypass for macos from step 6
 
 
 # Credits
